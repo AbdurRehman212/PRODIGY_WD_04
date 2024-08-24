@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Abdur Rehman Khan- Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task04.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Muhammad Abdur Rehman Khan</h1>
+                <h2>Web Developer & Designer</h2>
+                <img src="1707744480696.jpeg" alt="Muhammad Abdur Rehman Khan" class="profile-photo">
+                <p>Crafting innovative web solutions with a passion for clean code and stunning design.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer with 2 years of experience in creating responsive and user-friendly websites. My journey in web development started with playing games.</p>
+                <div class="background">
+                    <h3>Background</h3>
+                    <p>I'am Currently Studing Computer Science</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Degree in Computer Science, Szabist , 2023</li>
+                       
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>experience in web development and python  </h3>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1...</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Description of Project 2...</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>Description of Project 3...</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Abdur Rehman Khan. All rights reserved.</p>
+    </footer>
+
+    <script src="task04.js"></script>
+</body>
+</html>
+
+/* Reset and base styles */
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     
+     body {
+       font-family: 'Roboto', sans-serif;
+       line-height: 1.6;
+       color: #333;
+       background-color: #f9f9f9;
+     }
+     
+     /* Typography */
+     h1, h2, h3 {
+       font-family: 'Playfair Display', serif;
+       margin-bottom: 1rem;
+     }
+     
+     h1 { font-size: 2.5rem; }
+     h2 { font-size: 2rem; }
+     h3 { font-size: 1.5rem; }
+     
+     /* Layout */
+     .container {
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 0 20px;
+     }
+     
+     /* Header styles */
+     .top-bar {
+       background-color: #f0c14b;
+       color: #333;
+       text-align: center;
+       padding: 10px 0;
+       font-weight: bold;
+     }
+     
+     header {
+       background-color: #ffffff;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+     }
+     
+     nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 1rem 2rem;
+     }
+     
+     .logo {
+       font-size: 1.5rem;
+       font-weight: bold;
+       color: #333;
+       text-decoration: none;
+     }
+     
+     nav ul {
+       display: flex;
+       list-style: none;
+     }
+     
+     nav ul li {
+       margin-left: 1.5rem;
+     }
+     
+     nav ul li a {
+       text-decoration: none;
+       color: #333;
+       font-weight: 500;
+       transition: color 0.3s ease;
+     }
+     
+     nav ul li a:hover {
+       color: #f0c14b;
+     }
+     
+     .nav-icons a {
+       margin-left: 1rem;
+       color: #333;
+       text-decoration: none;
+       font-size: 1.2rem;
+     }
+     
+     /* Hero section */
+     .hero {
+       background-image: url('pexels-karolina-grabowska-5877662.jpg');
+       background-size: cover;
+       background-position: center;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       color: #fff;
+     }
+     
+     .hero h1 {
+       font-size: 3rem;
+       margin-bottom: 2rem;
+       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+     }
+     
+     .cta-button {
+       background-color: #f0c14b;
+       color: #333;
+       padding: 12px 24px;
+       border-radius: 30px;
+       text-decoration: none;
+       font-weight: bold;
+       transition: background-color 0.3s ease;
+     }
+     
+     .cta-button:hover {
+       background-color: #f7dc6f;
+     }
+     
+     /* Featured product */
+     .featured-product {
+       display: flex;
+       margin: 4rem 0;
+       background-color: #fff;
+       border-radius: 10px;
+       overflow: hidden;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+     }
+     
+     .product-image {
+       flex: 1;
+       background-image: url('pexels-karolina-grabowska-5877662');
+       background-size: cover;
+       background-position: center;
+       min-height: 400px;
+     }
+     
+     .product-details {
+       flex: 1;
+       padding: 2rem;
+     }
+     
+     .price {
+       font-size: 1.5rem;
+       color: #e67e22;
+       margin-bottom: 1rem;
+     }
+     
+     .product-options button {
+       background-color: #f9f9f9;
+       border: 2px solid #ddd;
+       padding: 8px 16px;
+       margin-right: 10px;
+       margin-bottom: 10px;
+       border-radius: 20px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+     }
+     
+     .product-options button:hover,
+     .product-options button.active {
+       background-color: #f0c14b;
+       border-color: #f0c14b;
+     }
+     
+     .quantity input {
+       width: 60px;
+       padding: 5px;
+       text-align: center;
+       border: 1px solid #ddd;
+       border-radius: 4px;
+     }
+     
+     .add-to-cart,
+     .buy-now {
+       display: block;
+       width: 100%;
+       padding: 12px;
+       margin-top: 1rem;
+       border: none;
+       border-radius: 4px;
+       font-size: 1rem;
+       font-weight: bold;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+     
+     .add-to-cart {
+       background-color: #f0c14b;
+       color: #333;
+     }
+     
+     .buy-now {
+       background-color: #2ecc71;
+       color: #fff;
+     }
+     
+     .add-to-cart:hover,
+     .buy-now:hover {
+       opacity: 0.9;
+     }
+     
+     /* Product grid */
+     .product-grid {
+       margin: 4rem 0;
+     }
+     
+     .grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+       gap: 2rem;
+     }
+     
+     .product-card {
+       background-color: #fff;
+       border-radius: 10px;
+       overflow: hidden;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       transition: transform 0.3s ease;
+     }
+     
+     .product-card:hover {
+       transform: translateY(-5px);
+     }
+     
+     .product-card img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+     }
+     
+     .product-card h3 {
+       padding: 1rem;
+     }
+     
+     .product-card .price {
+       padding: 0 1rem;
+     }
+     
+     .product-card button {
+       width: 100%;
+       padding: 10px;
+       background-color: #f0c14b;
+       border: none;
+       color: #333;
+       font-weight: bold;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+     
+     .product-card button:hover {
+       background-color: #f7dc6f;
+     }
+     
+     .view-all {
+       display: block;
+       margin: 2rem auto;
+       padding: 12px 24px;
+       background-color: #333;
+       color: #fff;
+       border: none;
+       border-radius: 4px;
+       font-size: 1rem;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+     
+     .view-all:hover {
+       background-color: #555;
+     }
+     
+     /* Newsletter */
+     .newsletter {
+       background-color: #f0c14b;
+       padding: 4rem 0;
+       text-align: center;
+     }
+     
+     .newsletter h2 {
+       color: #333;
+       margin-bottom: 1rem;
+     }
+     
+     .newsletter form {
+       display: flex;
+       justify-content: center;
+       max-width: 500px;
+       margin: 0 auto;
+     }
+     
+     .newsletter input {
+       flex-grow: 1;
+       padding: 12px;
+       border: none;
+       border-radius: 4px 0 0 4px;
+     }
+     
+     .newsletter button {
+       padding: 12px 24px;
+       background-color: #333;
+       color: #fff;
+       border: none;
+       border-radius: 0 4px 4px 0;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+     
+     .newsletter button:hover {
+       background-color: #555;
+     }
+     
+     /* Footer */
+     footer {
+       background-color: #333;
+       color: #fff;
+       padding: 4rem 0 2rem;
+     }
+     
+     .footer-content {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 2rem;
+     }
+     
+     .footer-column {
+       flex: 1;
+       margin-right: 2rem;
+     }
+     
+     .footer-column h3 {
+       color: #f0c14b;
+       margin-bottom: 1rem;
+     }
+     
+     .footer-column ul {
+       list-style: none;
+     }
+     
+     .footer-column ul li {
+       margin-bottom: 0.5rem;
+     }
+     
+     .footer-column ul li a {
+       color: #fff;
+       text-decoration: none;
+       transition: color 0.3s ease;
+     }
+     
+     .footer-column ul li a:hover {
+       color: #f0c14b;
+     }
+     
+     .footer-bottom {
+       border-top: 1px solid #555;
+       padding-top: 2rem;
+       text-align: center;
+     }
+     
+     .footer-bottom ul {
+       list-style: none;
+       display: flex;
+       justify-content: center;
+       margin-top: 1rem;
+     }
+     
+     .footer-bottom ul li {
+       margin: 0 1rem;
+     }
+     
+     .footer-bottom ul li a {
+       color: #fff;
+       text-decoration: none;
+       font-size: 0.9rem;
+       transition: color 0.3s ease;
+     }
+     
+     .footer-bottom ul li a:hover {
+       color: #f0c14b;
+     }
+     
+     /* Chat widget */
+     .chat-widget {
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+       z-index: 1000;
+     }
+     
+     .chat-widget button {
+       background-color: #f0c14b;
+       color: #333;
+       border: none;
+       padding: 12px 24px;
+       border-radius: 30px;
+       font-weight: bold;
+       cursor: pointer;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+       transition: background-color 0.3s ease;
+     }
+     
+     .chat-widget button:hover {
+       background-color: #f7dc6f;
+     }
+     
+     /* Promo popup */
+     .promo-popup {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background-color: #fff;
+       padding: 2rem;
+       border-radius: 10px;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       z-index: 2000;
+       display: none;
+     }
+     
+     .promo-popup.show {
+       display: block;
+     }
+     
+     .promo-popup button {
+       background-color: #f0c14b;
+       color: #333;
+       border: none;
+       padding: 12px 24px;
+       border-radius: 4px;
+       font-weight: bold;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+     
+     .promo-popup button:hover {
+       background-color: #f7dc6f;
+     }
+     /* Style for the promo popup */
+.promo-popup {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: #fff; /* Background color of the popup */
+  border: 1px solid #ddd; /* Border around the popup */
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 1000; /* Ensure it’s on top of other elements */
+}
+
+/* Style for the close button */
+.promo-popup .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888; /* Color of the close button */
+}
+
+.promo-popup .close-btn:hover {
+  color: #000; /* Change color on hover */
+}
+
+     /* Accessibility and responsiveness */
+     @media (max-width: 768px) {
+       nav ul {
+         display: none;
+       }
+     
+       .featured-product {
+         flex-direction: column;
+       }
+     
+       .product-image {
+         min-height: 300px;
+       }
+     
+       .footer-content {
+         flex-direction: column;
+       }
+     
+       .footer-column {
+         margin-bottom: 2rem;
+       }
+     }
+     
+     /* Focus styles for keyboard navigation */
+     a:focus,
+     button:focus,
+     input:focus {
+       outline: 3px solid #f0c14b;
+       outline-offset: 2px;
+     }
+     
+     /* High contrast mode */
+     @media (prefers-color-scheme: high-contrast) {
+       body {
+         background-color: #000;
+         color: #fff;
+       }
+     
+       .product-card,
+       .featured-product,
+       .newsletter,
+       .promo-popup {
+         background-color: #333;
+         color: #fff;
+       }
+     
+       .cta-button,
+       .add-to-cart,
+       .buy-now,
+       .product-card button,
+       .newsletter button,
+       .chat-widget button {
+         background-color: #fff;
+         color: #000;
+       }
+     }
+     ScrollReveal().reveal('section', {
+    delay: 200,
+    distance: '50px',
+    duration: 1000,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    interval: 0,
+    opacity: 0,
+    origin: 'bottom',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 0,
+    },
+    scale: 1,
+    cleanup: false,
+    container: document.documentElement,
+    desktop: true,
+    mobile: true,
+    reset: false,
+    useDelay: 'always',
+    viewFactor: 0.0,
+    viewOffset: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+    },
+    afterReveal: function (domEl) {},
+    afterReset: function (domEl) {},
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+     /* Animations */
+     @keyframes fadeIn {
+       from { opacity: 0; }
+       to { opacity: 1; }
+     }
+     
+     .product-card,
+     .featured-product,
+     .newsletter {
+       animation: fadeIn 1s ease-out;
+     }
+
